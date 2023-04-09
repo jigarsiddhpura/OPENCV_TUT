@@ -29,7 +29,7 @@ erroded = cv.erode(dilated,(7,7), iterations=3)
 #resize
 resized = cv.resize(img,(1000,800), interpolation=cv.INTER_CUBIC)
 # resizedL = cv.resize(img,(1000,800), interpolation=cv.INTER_LINEAR)
-# cv.imshow('resized', resized)
+cv.imshow('resized', resized)
 
 #cropping
 cropped = img[100:200,200:400]

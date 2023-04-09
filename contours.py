@@ -15,6 +15,7 @@ canny = cv.Canny(blur, 125, 175)
 
 # threshold reads img -> converts to binary -> if px < 125 -> change to black(0) else white(255)
 ret , thresh = cv.threshold(gray, 125, 255, cv.THRESH_BINARY)
+print(f'ret = ',ret)
 cv.imshow('thresh',thresh)
 
 # contours ,hierarchies = cv.findContours(canny, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)

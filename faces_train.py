@@ -39,7 +39,7 @@ labels = np.array(labels)
 
 # print(cv.__version__)
 
-face_recognizer = cv.face.LBPHFaceRecognizer() 
+face_recognizer = cv.face.LBPHFaceRecognizer_create() 
 face_recognizer.train(features,labels)
 
 # saving trained model
